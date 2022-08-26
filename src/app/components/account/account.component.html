@@ -1,0 +1,8 @@
+<h1>User Profile</h1>
+<h4>Name: {{ user.name | titlecase }}</h4>
+<h4>Username: {{ user.username | titlecase }}</h4>
+<h4>Email: {{ user.email }}</h4>
+<h4>Id: {{ user.id }}</h4>
+<h4>Bio: {{ profile.bio }}</h4>
+<h4>Location:{{ profile.location |titlecase}}</h4>
+<h4>Image: <img [src]="profile.image"  alt="" class="img-responsive image" /></h4>
