@@ -5,7 +5,10 @@ import { AuthComponent } from './components/auth/auth.component';
 
 const routes: Routes = [
   {path: 'profile', component: AccountComponent},
-  {path: 'auth', component: AuthComponent}
+  {path: 'auth', component: AuthComponent},
+
+  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: '**', redirectTo: '/auth' },
 ];
 
 @NgModule({
